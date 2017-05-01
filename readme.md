@@ -17,12 +17,16 @@ When you clone it, inside folder nr-challenge you must to:
 Install dependencies:
 
 ´´´
+
     $ composer install
+
 ´´´
 **OR**
 
 Update your dependencies:
 
 ´´´
+
     $ composer update
+
 ´´´
