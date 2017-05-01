@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Nr-challenge</title>
+        <title>{{ $title }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -20,10 +20,32 @@
     </head>
     <body>
         <div class="container"><br>
-            <a href="{{ route('sebrae') }}" class="btn btn-info" title="">Sebrae</a>
-        </div>
-        <div class="container"><br>
-            <a href="{{ route('cnpq') }}" class="btn btn-info" title="">Cnpq</a>
+        <h2 align="center">{{ $title }}</h2>
+	<p>
+        @if($title == 'Sebrae')
+    		@for ($i = 0; $i < count($data); $i++)
+    			<p>
+                    {{ $unit[$i]}}<br>
+    				{{ $concurrence[$i]}}<br>
+                    {{ $data[$i] }} <br>
+                    <hr>
+    			</p>
+		  @endfor
+        @elseif($title == 'Cnpq')
+            @for ($i = 0; $i < count($category); $i++)
+                <p>
+                    <strong>{{ $category[$i] }}</strong><br>
+                    {{ $object[$i]}}<br>                   
+                    {{ $opening[$i]}}<br>                    
+                    <hr>
+                    
+                </p>
+            @endfor
+        @endif
+
+	</p>
+    <p>
+
         </div>
 
 
@@ -31,3 +53,4 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>
 </html>
+

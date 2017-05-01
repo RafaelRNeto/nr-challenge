@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/sebrae', 'ScraperController@sebrae')->name('sebrae');
+Route::get('/cnpq', 'ScraperController@cnpq')->name('cnpq');
