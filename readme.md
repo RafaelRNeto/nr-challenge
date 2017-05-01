@@ -21,6 +21,7 @@ Install dependencies:
     $ composer install
 
 ´´´
+
 **OR**
 
 Update your dependencies:

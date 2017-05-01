@@ -1,0 +1,12 @@
+/* My styles*/
+
+#body {
+    background-color:#E8E8E8;
+}
+
+#sebrae, #cnpq{
+    width: 250px;
+    font-size: 70px;
+    border-radius: 150px;
+}
+
