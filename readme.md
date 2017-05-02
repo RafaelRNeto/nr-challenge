@@ -21,12 +21,3 @@ Install dependencies
 
     $ composer install
 ```
-
-**OR**
-
-Update your dependencies:
-
-```
-
-    $ composer update
-```
