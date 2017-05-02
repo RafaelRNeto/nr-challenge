@@ -7,27 +7,26 @@ It was no easy, I have never did that before, I just heard one time.
 
 **I used:**
 ---
-* Goutte;
+* LARAVEL 5.4;
+* Goutte.
 
 What do you need to run this program?
 
 When you clone it, inside folder nr-challenge you must to:
 ---
 
-Install dependencies:
+Install dependencies
 
-´´´
+```
 
     $ composer install
-
-´´´
+```
 
 **OR**
 
 Update your dependencies:
 
-´´´
+```
 
     $ composer update
-
-´´´
+```
